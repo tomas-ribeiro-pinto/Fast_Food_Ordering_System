@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="AStar">
+    <Position X="0.5" Y="0.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAgAAACACACAAIACAAAAAEAAIAAAAAAAAA=</HashCode>
+      <FileName>AStar.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataSeeder">
+    <Position X="6.25" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAFAEAAACBAKAgAAAAAGAAAAgAAAIAAAAAAAAA=</HashCode>
+      <FileName>DataSeeder.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DisplayManager">
+    <Position X="3.5" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AIDAAAABAAAAAABAAAAAAIAAAAEAAAAAAgAAAAQCAAA=</HashCode>
+      <FileName>DisplayManager.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Graph">
+    <Position X="0.5" Y="4" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAIAAAAAYCBAAAQIAEYAAgAAAAAAAAAAgA=</HashCode>
+      <FileName>Graph.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ingredient">
+    <Position X="8.75" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAAAAAAAAAAAgEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Ingredient.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Item">
+    <Position X="8.75" Y="2.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>ADAAAAEAACAAAAAAICAgAAIEAAAUgAAAAAAEAAAAAAA=</HashCode>
+      <FileName>Item.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LinkedList&lt;T&gt;">
+    <Position X="11.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAEAAEABIAAAAAAAAAACAAAAAAAQAA=</HashCode>
+      <FileName>LinkedList.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Location">
+    <Position X="4.25" Y="4" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAAAAIEAQAAAAEEAAAAAABgAAIAAAA=</HashCode>
+      <FileName>Location.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LocationTable">
+    <Position X="6" Y="7.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAACAAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>LocationTable.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Node">
+    <Position X="6.75" Y="4.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAAAAQACAAAAAAAYQAAAAAMAAAA=</HashCode>
+      <FileName>Node.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Order">
+    <Position X="13" Y="2" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAACGACAAEAAAiAKAKECAAiAEAQABIwAQAAAAA=</HashCode>
+      <FileName>Order.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OrderManager">
+    <Position X="9" Y="6.75" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAACAAABAAAAAAAAIAAAAAAAAAAAwAAAAAAAAAAAAAA=</HashCode>
+      <FileName>OrderManager.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PriorityQueue&lt;T&gt;">
+    <Position X="15.5" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>IAAACAAAIIBAAAAEBIAAAAAAAAAAgAAAAAIQCAAAQAA=</HashCode>
+      <FileName>PriorityQueue.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Stack&lt;T&gt;">
+    <Position X="11.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAAAAAABAAAAIgAgAQCAAAAAAAICAAAQAA=</HashCode>
+      <FileName>Stack.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="OrderType">
+    <Position X="13.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAAAAAQAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Order.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -3,6 +3,7 @@
 
 DataSeeder::DataSeeder()
 {
+    // Seed when object is created
     DataSeeder::seedIngredients();
     DataSeeder::seedItems();
     DataSeeder::seedOrders();
@@ -11,15 +12,18 @@ DataSeeder::DataSeeder()
 
 DataSeeder::~DataSeeder()
 {
-    //// Delete ingredients from dynamic array
-    //for (int i = 0; i < ingredientsSize; i++)
-    //{
-    //    delete ingredients[i];
-    //}
+    // Delete ingredients from dynamic array
+    for (int i = 0; i < ingredientsSize; i++)
+    {
+        delete ingredients[i];
+    }
 
-    //delete[] ingredients;
+    delete[] ingredients;
 }
 
+/*
+* Seed ingredients
+*/
 void DataSeeder::seedIngredients()
 {
     Ingredient* i1 = new Ingredient("Ketchup");
@@ -40,6 +44,9 @@ void DataSeeder::seedIngredients()
     ingredients[5] = i6;
 }
 
+/*
+* Seed items
+*/
 void DataSeeder::seedItems()
 {
     Item i1 = Item("Big Delicious", 4.5, 3);
@@ -62,6 +69,9 @@ void DataSeeder::seedItems()
     items.push_back(i4);
 }
 
+/*
+* Seed and create orders
+*/
 void DataSeeder::seedOrders()
 {
     vector<Item> o1Items;
@@ -91,11 +101,14 @@ void DataSeeder::seedOrders()
     orders.push_back(o4);
 }
 
+/*
+* Create restaurant floor plan for identifying tables and shortest paths using a Graph object
+*/
 void DataSeeder::seedRestaurantFloor()
 {
     graph = new Graph(16);
 
-    //Create tables and collection Counter
+    // Create tables and collection counter
     Location* collectionCounter = new Location(0, "A1", 0, 0);
     Location* table1 = new LocationTable(1, 12, "D1", 0, 3);
     Location* table2 = new LocationTable(2, 9, "C2", 1, 2);
@@ -103,6 +116,7 @@ void DataSeeder::seedRestaurantFloor()
     Location* table4 = new LocationTable(4, 7, "B4", 3, 1);
     Location* table5 = new LocationTable(5, 15, "D4", 3, 3);
 
+    // Save tables and collection counter to a vector
     tables.push_back(collectionCounter);
     tables.push_back(table1);
     tables.push_back(table2);
@@ -129,8 +143,7 @@ void DataSeeder::seedRestaurantFloor()
     graph->addVertex(tables[5]);
 
     // Add the connecting edges to create the restaurant floor.
-    // IMPORTANT: This floor is set for only one way journeys to tables. 
-    // There are no return journeys from tables as edges only connect from left to right 
+    // IMPORTANT: This floor is set only for journeys between edges that connect from left to right 
     // Diagonal movements are square root of 2 in terms of weight
     graph->addEdge(0, 1, 1);
     graph->addEdge(0, 4, 1);

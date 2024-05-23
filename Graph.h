@@ -7,10 +7,11 @@
 class Graph
 {
 private:
+    // default value of a vertex weight
     static const int INF = 1000000;
     int size;
     int numberVertices;
-    double** adjMat;
+    float** adjMat;
 
 public:
     Location** vertices;
@@ -20,7 +21,6 @@ public:
     PriorityQueue<Location>* getAdjacentVertices(Location* vertex);
     int getNumberVertices();
     void display();
-    LinkedList<Location>* getAdjacentVerticesLL(Location* vertex);
     float distanceBetweenVertices(Location* first, Location* second);
     Location* getLowestWeight(LinkedList<Location>* adjacentVerticies, Location* vertex);
 };

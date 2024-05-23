@@ -9,7 +9,7 @@ OrderManager::OrderManager(vector<Order> &ordersVector)
     {
         Order* ptr = new Order(order);
 
-        // Add orders to queue according to priority
+        // Add orders to queue according to priority cost
         OrderManager::addToOrderQueue(ptr);
     }
 
@@ -18,14 +18,6 @@ OrderManager::OrderManager(vector<Order> &ordersVector)
 
 OrderManager::~OrderManager()
 {
-    /*     // Delete orders queue
-        for (int i = 0; i < orders.getSize(); i++)
-        {
-            Order p = orders.remove();
-            delete p;
-        }
-
-        delete orders; */
 }
 
 void OrderManager::addToOrderQueue(Order* order)

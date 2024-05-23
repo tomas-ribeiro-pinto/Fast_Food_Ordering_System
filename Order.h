@@ -40,7 +40,6 @@ public:
     string getOrderTypeLabel();
     vector<Item> getItems();
     void addItem(Item* item);
-    void removeItem(Item *item);
     void serveOrder(PriorityQueue<Order>& v);
     void displayOrder();
     void displayFullOrder();
@@ -48,6 +47,6 @@ public:
     int getOrderSize();
     bool operator>(const Order& rhd);
     void setPriorityCost();
-    // static Factorial Function
+    // Static factorial function for calculating order priority cost
     static int factorial(int n);
 };

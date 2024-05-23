@@ -14,16 +14,16 @@ Item::Item(string name, float cost, int numberOfIngredients)
 
 Item::~Item()
 {
-    //for (int i = 0; i < numberOfIngredients; i++)
-    //{
-    //    delete ingredients[i];
-    //}
-    //delete[] ingredients;
 }
 
 string Item::getName()
 {
     return this->name;
+}
+
+void Item::setCost(float cost)
+{
+    this->cost = cost;
 }
 
 float Item::getCost()

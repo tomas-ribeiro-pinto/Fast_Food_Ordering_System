@@ -6,6 +6,7 @@
 #include "Graph.h"
 #include <vector>
 #include "Location.h"
+#include "LocationTable.h"
 #include "AStar.h"
 
 using namespace std;

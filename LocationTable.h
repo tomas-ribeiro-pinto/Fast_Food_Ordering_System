@@ -4,6 +4,9 @@
 
 using namespace std;
 
+/*
+* Subclass of Location that asigns a table at a set of cordinates
+*/
 class LocationTable : public Location
 {
 public:

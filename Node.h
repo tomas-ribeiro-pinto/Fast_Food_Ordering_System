@@ -5,6 +5,11 @@
 
 using namespace std;
 
+/*
+* The Node class contains the heuristic and other value costs of a 
+* Location when performing an A star path finding algorithm.
+* It also serves as an assistant class to the LinkedList class to identify the next value of the chain
+*/
 class Node
 {
 public:

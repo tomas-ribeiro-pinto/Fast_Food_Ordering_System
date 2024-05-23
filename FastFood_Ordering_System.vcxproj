@@ -134,11 +134,18 @@
     <ClCompile Include="LocationTable.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="ClassDiagram.cd" />
     <None Include="packages.config" />
     <None Include="PropertySheet.props" />
     <Text Include="readme.txt">
       <DeploymentContent>false</DeploymentContent>
     </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\..\Downloads\1.PNG" />
+    <Image Include="..\..\..\Downloads\2.PNG" />
+    <Image Include="..\..\..\Downloads\3.PNG" />
+    <Image Include="ClassDiagram.png" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -2,6 +2,7 @@
 #include "Order.h"
 
 // Constructor for Order: items can be set at a later stage, and tableNumber is optional
+// TODO: Aditional checks need to be implemented for checking the existance of a table number
 Order::Order(string customerName, OrderType orderType, vector<Item> items, int tableNumber)
 {
     this->items = items;
@@ -73,25 +74,24 @@ void Order::addItem(Item* item)
     items.push_back(*item);
 }
 
-void Order::removeItem(Item *item)
-{
-    //vector<Item>::iterator res;
-    //res = find(items.begin(), items.end(), item);
-    //items.erase(res);
-} 
-
 void Order::serveOrder(PriorityQueue<Order> &v)
 {
     isServed = true;
     v.remove();
 }
 
+/*
+* Short Order summary
+*/
 void Order::displayOrder()
 {
     cout << "#" << Order::getOrderNumber() << " | " << Order::getOrderTypeLabel() << endl;
     cout << "Customer: " << Order::getCustomerName() << " | Items: " << items.size() << endl;
 }
 
+/*
+* Full Order summary
+*/
 void Order::displayFullOrder()
 {
     cout << endl;
@@ -118,6 +118,9 @@ void Order::displayFullOrder()
     cout << endl;
 }
 
+/*
+* Get total cost of order
+*/
 float Order::getTotalCost()
 {
     vector<Item>::iterator it;
@@ -133,16 +136,27 @@ float Order::getTotalCost()
     return totalCost;
 }
 
+/*
+* returns the number of items in an order
+*/
 int Order::getOrderSize()
 {
     return items.size();
 }
 
+/*
+* Operator overload for comparing priority cost
+*/
 bool Order::operator>(const Order& rhd)
 {
     return priorityCost > rhd.priorityCost;
 }
 
+/*
+* Set the priority cost according to number of items in an order and type of order.
+* Drive Thu orders get priority over other orders.
+* TODO: This algorithm needs to be modified in the future to take into consideration time of ordering.
+*/
 void Order::setPriorityCost()
 {
     int size = Order::getOrderSize();
@@ -157,6 +171,9 @@ void Order::setPriorityCost()
     }
 }
 
+/*
+* Recursive function that calculates the factorial value of a number
+*/
 int Order::factorial(int n)
 {
     if (n > 1)

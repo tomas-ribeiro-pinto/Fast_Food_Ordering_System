@@ -11,14 +11,11 @@ DisplayManager::DisplayManager(PriorityQueue<Order> orders, Graph* graph, vector
 
 DisplayManager::~DisplayManager()
 {
-    /*     // Delete orders queue
-        for (int i = 0; i < orders.getSize(); i++)
-        {
-            Order *p = orders.remove();
-            delete p;
-        }
+    // Clear tables vector and delete other dynmaic variables
+    tables.clear();
 
-        delete orders; */
+    delete restaurantFloor;
+    delete currentOrder;
 }
 
 void DisplayManager::display()

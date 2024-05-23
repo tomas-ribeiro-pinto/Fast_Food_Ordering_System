@@ -11,7 +11,9 @@ public:
     string name;
     float x, y;
     bool wasVisited;
+    // pointer to the next location if in a linked list
     Location* next;
+
     Location(int key, string name, float x, float y) : key(key), name(name), x(x), y(y) {}
 
     bool operator==(const Location& rhd)
